@@ -1,0 +1,55 @@
+<html>
+<head>
+	<title>Accordion demo page</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="./css/accordion/accordion.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<script type="text/javascript" src="./js/accordion/accordion.js"></script>
+</head>
+<body>
+<h1>Accordion demo page</h1>
+<div id="my-accordion" class="grid"></div>
+<!--
+ Example Grid
+<h2>grid fluid</h2>
+<div id="example-grid" class="grid">
+	<div class="column"></div>
+	<div class="column"></div>
+	<div class="column"></div>
+	<div class="column"></div>
+	<div class="column"></div>
+	<div class="column"></div>
+	<div class="column"></div>
+	<div class="column"></div>
+	<div class="column"></div>
+	<div class="column"></div>
+	<div class="column"></div>
+	<div class="column"></div>
+</div>
+-->
+<script type="text/javascript">
+	var options = {
+		container: 'my-accordion',
+		mainTitle: 'Main accordion title', // Optional title header
+		panels: [{
+			title: 'My profile',
+			subtitle: 'Update you profile information questo titolo deve essere particolarmente lungo', // Optional subtitle
+			content: '<p>HTML content for this panel</p>'
+		},{
+			title: 'Change password',
+			subtitle: 'Change your login password', // Optional subtitle
+			content: '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>'
+		},{
+			title: 'Preferences',
+			subtitle: 'Set your language and timezone preferences', // Optional subtitle
+			content: '<p>HTML content for this panel</p>'
+		},{
+			title: 'No description title',
+			content: '<p>HTML content for this panel</p>'
+		}]
+	};
+	var accordion = new Accordion(options);
+</script>
+</body>
+</html>

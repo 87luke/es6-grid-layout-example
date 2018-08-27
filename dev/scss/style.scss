@@ -1,0 +1,13 @@
+* {
+	box-sizing:border-box;
+}
+
+body {
+	background: lightgrey;
+	margin: 0;
+	padding: 0;
+}
+
+@import "partials/grid";
+@import "partials/typography";
+
